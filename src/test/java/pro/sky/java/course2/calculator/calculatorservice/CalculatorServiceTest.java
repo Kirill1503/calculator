@@ -1,15 +1,11 @@
 package pro.sky.java.course2.calculator.calculatorservice;
 
 import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 
 class CalculatorServiceTest {
 
     CalculatorService calculatorService = new CalculatorService();
-
-
 
     @Test
     void sum() {
