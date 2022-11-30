@@ -1,6 +1,8 @@
 package pro.sky.java.course2.calculator.calculatorservice;
 
 import org.springframework.stereotype.Service;
+import pro.sky.java.course2.calculator.exception.CalculatorParameterException;
+
 
 @Service
 public class CalculatorService {
@@ -17,6 +19,9 @@ public class CalculatorService {
     }
 
     public double divide(int a, int b) {
+        if (b == 0) {
+            throw new CalculatorParameterException("Делить на ноль нельзя!");
+        }
         return (double) a / b;
     }
 }
