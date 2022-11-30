@@ -3,6 +3,7 @@ package pro.sky.java.course2.calculator.calculatorservice;
 import org.springframework.stereotype.Service;
 import pro.sky.java.course2.calculator.exception.CalculatorParameterException;
 
+
 @Service
 public class CalculatorService {
     public int sum(int a, int b) {
